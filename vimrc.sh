@@ -30,3 +30,5 @@ for file in $PLUGINS_DIR/*.vrc; do
 	cat "$file" >> "$VIMRC_FILE"
 done
 vim +PluginInstall +qall
+echo "set undodir=~/.vim/undodir" >> "$VIMRC_FILE"
+echo "set undofile" >> "$VIMRC_FILE"
